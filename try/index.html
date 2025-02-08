@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Remote Work</title>
+</head>
+<body>
+    <header>
+        <b>snap</b>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#", id="01" onclick="toggleDropdown(this); ">Features <img src="assets/icon-arrow-down.svg" alt="icon"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#"><img src="assets/icon-todo.svg" alt="icon"> Todo List</a></li><br>
+                        <li><a href="#"><img src="assets/icon-calendar.svg" alt="icon"> Calender</a></li><br>
+                        <li><a href="#"><img src="assets/icon-reminders.svg" alt="icon"> Reminders</a></li><br>
+                        <li><a href="#"><img src="assets/icon-planning.svg" alt="icon"> Planning</a></li>
+                    </ul>
+                    <script>
+                    function toggleDropdown(element) {
+                        var dropdownMenu = element.nextElementSibling;
+                        if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+                            dropdownMenu.style.display = "block";
+                        } else {
+                            dropdownMenu.style.display = "none";
+                        }
+                    }
+                    </script>
+                </li>
+                <li></li>
+
+                <li class="dropdown">
+                    <a href="#" onclick="toggleDropdown(this);">Company <img src="assets/icon-arrow-down.svg" alt="icon"></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">History</a></li><br>
+                        <li><a href="#">Our Team</a></li><br>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                    <script>
+                        function toggleDropdown(element) {
+                            var dropdownMenu = element.nextElementSibling;
+                            if (dropdownMenu.style.display === "none" || dropdownMenu.style.display === "") {
+                                dropdownMenu.style.display = "block";
+                            } else {
+                                dropdownMenu.style.display = "none";
+                            }
+                        }
+                        </script>
+                </li>
+                <li></li>
+
+                <li><a href="#">Carreers</a></li>        
+                <li></li>
+                <li><a href="#">About</a></li>    
+                <li></li>
+                <li id="rit"><a href="#">Login</a></li>
+                <li><button type="submit">Register</button></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <aside>
+                <h1>Make <br>remote work</h1>
+                <p>Get Your team in sync,no matter your location.<br>
+                Streamline Processes, create team rituas, and<br> watch productivity soar.</p>
+                <br>
+                <br>
+                <button type="submit" onmouseover="this.style.backgroundColor='white'; this.style.color='black';" onmouseout="this.style.backgroundColor='black'; this.style.color='white';">Learn More</button>
+
+            </aside>
+            <aside>
+                <img src="assets/image-hero-desktop.png" alt="Hero Image">
+            </aside>
+        </div>
+            <div></div>
+    </main>
+    <footer>
+        <img src="assets/client-databiz.svg">    
+        <img src="assets/client-audiophile.svg">       
+        <img src="assets/client-meet.svg">      
+        <img src="assets/client-maker.svg"> 
+    </footer>
+</body>
+</html>

@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    width: 90%;
+    height: 70vh; /* Adjusted to 100vh to fit the full viewport height */
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+}
+
+main aside {
+    padding: 50px; /* Adjust the value as needed */
+}
+body {
+    padding-left: 20px; /* Adjust the value as needed to duplicate the breadth of the space */
+}
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+header .dropdown::before {
+    display: none;
+}
+header ul {
+    margin-top: 50px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+header ul li{
+    
+ul {
+    display: none;
+    content: none;
+
+}
+}
+
+header b {
+    font-family: sans-serif, 'planc';
+    font-size: 40px;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+#rit {
+    margin-left: 10cm;
+}
+
+header .dropdown-menu {
+    display: none;
+    list-style: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+}
+
+header .dropdown::before {
+    content: "▼";
+    margin-right: 5px;
+}
+
+header .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li a img {
+    width: 10px;
+    height: 10px;
+    vertical-align: middle;
+}
+
+nav ul li .dropdown-menu {
+    background-color: white;
+    display: none;
+}
+
+nav ul li .dropdown-menu li a {
+    text-decoration: none;
+    line-height: 2;
+    color: black;
+}
+
+nav ul li .dropdown-menu li a img {
+    width: 16px;
+    height: 16px;
+    vertical-align: middle;
+}
+
+button {
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+}
+
+main aside h1 {
+    font-family: 'Planc', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+main aside p {
+    margin: 0;
+}
+
+main aside button {
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 8px 21px;
+    background-color: black;
+    color: white;
+}
+
+main aside button:hover {
+    background-color: white;
+    color: black;
+}
+
+main aside img {
+    width: 45%;
+    height: 14cm;
+    float: right;
+    position: relative;
+    top: -14cm;
+}
+
+footer img {
+    margin-right: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    main aside img {
+        float: none;
+        position: static
+        }
+}
+
+@media (max-width: 992px) {
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header b {
+        font-size: 30px;
+    }
+
+    #rit {
+        margin-left: 0;
+    }
+
+    main aside h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main aside h1 {
+        font-size: 40px;
+    }
+
+    main aside button {
+        font-size: 15px;
+        padding: 6px 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        width: 100%;
+    }
+
+    header b {
+        font-size: 25px;
+    }
+
+    main aside h1 {
+        font-size: 30px;
+    }
+
+    main aside button {
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+}
+footer img {
+    margin-right: 20px;
+    margin-top: -40px; /* Adjust the value as needed to move the images upward */
+}
